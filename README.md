@@ -20,7 +20,7 @@ with `cl /O2 dump.cpp /link /out:dump.exe`.
 
 ## Demo
 
-https://rongjiecomputer.github.io/bloat-win/v8.html
+https://rongjiecomputer.github.io/bloat-win/v8
 
 ## Tips
 
