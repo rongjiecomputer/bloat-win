@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bloat for Windows</title>
+<style>
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  margin: 20px;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+p {
+  line-height: 1.5;
+}
+.webtreemap-node {
+  position: absolute;
+  font-size: 11px;
+  overflow: hidden;
+  background: #fff;
+  border: solid 1px #aaa;
+  text-align: center;
+  transition: top .3s, left .3s, width .3s, height .3s;
+}
+.webtreemap-node:hover {
+  background: #eee;
+}
+#map {
+  width: 100%;
+  min-width: 800px;
+  height: 650px;
+  position: relative;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Bloat for Windows</h1>
+
+<p>Click on a box to zoom in. Click on the outermost box to zoom out.</p>
+
+<div id="map"></div>
+
+<script src="dump.json"></script>
+<script src="webtreemap/webtreemap.js"></script>
+<script>
+appendTreemap(document.getElementById("map"), kTree);
+</script>
+
+</body>
+</html>
